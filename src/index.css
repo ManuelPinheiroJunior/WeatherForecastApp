@@ -1,12 +1,30 @@
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", Arial, sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     background-color: #d5d4d4;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #8b8b8b1a, #151515),
+    url("../public/cityDay.jpg");
+    background-position: relative;  
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #151515;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #868686;
+    border-radius: 40px;
+  }
+  

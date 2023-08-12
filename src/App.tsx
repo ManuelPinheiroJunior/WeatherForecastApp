@@ -53,10 +53,12 @@ function App() {
 
 
   return (
-    <div className="container">
+    <div id="container-imagem">
+    <div className={"container"}>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
+    </div>
     </div>
   );
 }
