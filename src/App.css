@@ -1,8 +1,9 @@
 .container {
     max-width: 1080px;
+    height: 100vh;
     margin: auto;
   }
-  #container-imagem {
+  #container-image {
     height: 100vh;
     width: 100vw;
     background-image: 
@@ -10,4 +11,12 @@
     background-position: relative;  
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.container-search {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

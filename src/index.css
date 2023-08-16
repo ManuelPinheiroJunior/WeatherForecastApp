@@ -6,11 +6,12 @@ body {
     background-color: #d5d4d4;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom, #8b8b8b1a, #151515),
+    background-image:
     url("../public/cityDay.jpg");
     background-position: relative;  
     background-size: cover;
     background-repeat: no-repeat;
+    
   }
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

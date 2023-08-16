@@ -29,7 +29,6 @@ function App() {
   const [forecast, setForecast] = useState(null);
 
   const handleOnSearchChange = (searchData : any) => {
-    console.log("🚀 ~ file: App.tsx:32 ~ handleOnSearchChange ~ searchData:", searchData)
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(
@@ -43,7 +42,7 @@ function App() {
       .then(async (response) => {
         const weatherResponse = await response[0].json();
         const forcastResponse = await response[1].json();
-
+        
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
         setForecast({ city: searchData.label, ...forcastResponse });
       })
@@ -53,9 +52,11 @@ function App() {
 
 
   return (
-    <div id="container-imagem">
+    <div id="container-image">
     <div className={"container"}>
+      <div className="container-search">
       <Search onSearchChange={handleOnSearchChange} />
+      </div>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
     </div>
