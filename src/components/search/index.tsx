@@ -2,7 +2,7 @@ import React, { ChangeEvent, useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { geoApiOptions, GEO_API_URL } from "../../api";
 import { optionType } from "../../types";
-import "../../App.css"
+
 
 
 type Props = {

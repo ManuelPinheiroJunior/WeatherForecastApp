@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 
 
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
-import "./App.css";
+import "./index.css";
 import { optionType } from "./types";
 import { Forecast } from "./components/forecast";
 import { Search } from "./components/search";
@@ -26,7 +26,9 @@ type Props = {
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
+  console.log("🚀 ~ file: App.tsx:29 ~ App ~ currentWeather:", currentWeather)
   const [forecast, setForecast] = useState(null);
+  console.log("🚀 ~ file: App.tsx:30 ~ App ~ forecast:", forecast)
 
   const handleOnSearchChange = (searchData : any) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -52,15 +54,15 @@ function App() {
 
 
   return (
-    <div id="container-image">
-    <div className={"container"}>
-      <div className="container-search">
+      <div className="app">
+      <div className="search">
+      <div className="input">
       <Search onSearchChange={handleOnSearchChange} />
+      </div>
       </div>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
-    </div>
-    </div>
+      </div>
   );
 }
 

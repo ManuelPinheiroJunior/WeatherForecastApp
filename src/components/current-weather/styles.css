@@ -1,9 +1,8 @@
 .weather {
-    width: 300px;
+    max-width: 450px;
     border-radius: 6px;
     box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
     color: #fff;
-    background-color: #333;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
    
@@ -22,7 +21,7 @@
   
   .city {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 80px;
     line-height: 1;
     margin: 0;
     letter-spacing: 1px;
@@ -30,7 +29,8 @@
   
   .weather-description {
     font-weight: 400;
-    font-size: 14px;
+    text-align: right;
+    font-size: 20px;
     line-height: 1;
     margin: 0;
   }
@@ -41,7 +41,7 @@
   
   .temperature {
     font-weight: 600;
-    font-size: 70px;
+    font-size: 80px;
     width: auto;
     letter-spacing: -5px;
     margin: 10px 0;
@@ -60,13 +60,13 @@
   .parameter-label {
     text-align: left;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
   }
   
   .parameter-value {
     text-align: right;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 18px;
   }
   
   .parameter-label.top {
