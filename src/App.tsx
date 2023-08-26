@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 
 
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
-import "./index.css";
+import "./App.css";
 import { optionType } from "./types";
 import { Forecast } from "./components/forecast";
 import { Search } from "./components/search";
@@ -54,12 +54,8 @@ function App() {
 
 
   return (
-      <div className="app">
-      <div className="search">
-      <div className="input">
+      <div className="container"> 
       <Search onSearchChange={handleOnSearchChange} />
-      </div>
-      </div>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
       </div>

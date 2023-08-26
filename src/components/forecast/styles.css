@@ -59,7 +59,7 @@
 
   .daily-details-grid-item:hover {
     transform: scale(1.03);
-    background-color: #f5f5f5;
+    text-shadow:  0 0 0.2em red, 0 0 0.2em yellow;
   }
   
   .daily-details-grid-item label:first-child {
